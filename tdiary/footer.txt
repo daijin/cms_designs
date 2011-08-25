@@ -1,0 +1,135 @@
+<!-- フッタここから -->
+</div><!-- main -->
+
+<% unless @conf.iphone? %><!-- iPhoneはここからナシ -->
+
+<div class="sidebar">
+<div class="sect">
+<h2>Site Menu</h2>
+<ul class=nav>
+<li><a href="http://www.zephyr-cradle.info/diary/">Diary</a></li>
+</ul>
+
+<ul class=nav>
+<li><a href="./../db/">Index</a></li>
+<li><a href="./../db/index.php/Information">Information</a></li>
+<li><a href="./../db/index.php/Work">Work</a></li>
+<li><a href="./../db/index.php/Sound">Sound</a></li>
+<li><a href="./../db/index.php/Novel">Novel</a></li>
+<li><a href="./../db/index.php/CG">CG</a></li>
+<li><a href="./../db/index.php/Link">Link</a></li>
+</ul>
+
+<ul class=nav>
+<li><a href="./../">Entrance</a></li>
+<li><a href="http://www.zephyr-cradle.info/clap/clap.cgi">Web拍手</a></li>
+</ul>
+</div>
+
+<div class="sect">
+<h2>Memo</h2>
+<p><%= till "20110929|碧の軌跡発売"%><br>
+</div>
+
+<div class="sect">
+<h2>日記のRSS</h2>
+<a href="http://www.zephyr-cradle.info/diary/index.rdf">
+<img src="../img/rss.jpg">コメントありRSS</a><br />
+<a href="http://www.zephyr-cradle.info/diary/no_comments.rdf">
+<img src="../img/rss.jpg">コメントなしRSS</a><br />
+</div>
+
+<div class="sect">
+<h2>Twitter</h2>
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 10000,
+  width: 'auto',
+  height: 300,
+  theme: {
+    shell: {
+      background: '#7787db',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#424242',
+      links: '#079beb'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    behavior: 'all'
+  }
+}).render().setUser('daijin').start();
+</script>
+</div>
+
+<div class="sect">
+<h2>宣伝</h2>
+■FF VIOLIN II<br/>
+<a href="http://tamusic.jp/?p=2253" title="FF VIOLIN II"><img src="http://www.zephyr-cradle.info/bn/ffviolin2_s.jpg" border="0"></a><br>
+■ten.<br/>
+<a href="http://r-m-t.jp/ten/index.html" title="ten. / RMT"><img src="http://www.zephyr-cradle.info/bn/bn_rmt_ten.jpg" border="0"></a><br/>
+■Zephyr Violin Duo<br>
+<a href="http://www.zephyr-cradle.info/violin2/" title="Zephyr Violin Duo"><img src="http://www.zephyr-cradle.info/violin2/img/zviolin2_ban200.jpg" border=0 alt="Zephyr Violin Duo"></a><br>
+</div>
+
+<div class="sect">
+<h2>応援</h2>
+■闇夜に踊れ<br/>
+<a href="http://www.yatanootori.com/" target="_blank">
+<img src="http://www.yatanootori.com/yatagarasu/product/Night/ban/banner_20040_nozomi.jpg"
+width="200" height="40" border="0" alt="「闇夜に踊れ-Witch wishes to commit the Night-」2011年5月27日発売予定"></a><br/>
+■Rewrite<br/>
+<a href="http://key.visualarts.gr.jp/rewrite/" title="Rewrite 6/24発売予定"><img src="http://www.zephyr-cradle.info/bn/bn_rewrite.jpg" border="0"></a><br/>
+■otokei_kansou<br>
+<a href="http://soundwing.com/otokei_kansou.html">
+<img src="http://www.zephyr-cradle.info/bn/otokei_kansou.jpg" border="0"/></a><br/>
+</div>
+
+<div class="sect">
+<h2>Category</h2>
+<%= category_list%>
+</div>
+
+<div class="sect">
+<h2>Recent Entry</h2>
+<%=recent_list 7%>
+</div>
+
+<div class="sect">
+<%= calendar %>
+</div>
+
+<div class="sect">
+<h2>Recent Comment</h2>
+<%= recent_comment 5, '<br>', '(%m-%d %H:%M)' %>
+</div>
+
+<div class="sect">
+<h2>本棚</h2>
+<script type="text/javascript" src="http://widget.booklog.jp/blogparts/js/booklog_minishelf.js?white_disp" id="booklog_minishelf"></script>
+<script type="text/javascript" src="http://api.booklog.jp/json/daijin?category=0&count=20&callback=booklog_minishelf"></script>
+</div>
+
+<div class="sect">
+<h2>My Xbox</h2>
+<iframe src="http://gamercard.xbox.com/zephyrcradle.card" scrolling="No" frameborder="0" height="140" width="204"></iframe>
+</div>
+</div><!-- sidebar -->
+<% end %><!-- iPhoneはここまでナシ -->
+
+<div class="footer">
+<p id="cp">&copy; 2001-2011 Zephyr Cradle</p>
+</div>
+<!-- フッタここまで -->

@@ -1,0 +1,14 @@
+<!-- ヘッダここから -->
+<%= navi %>
+<h1><span class="header"><%= @html_title %></span></h1>
+
+<div class="main">
+
+<div class="day">
+<div class="body">
+<div class="section">
+<p>割とゲームとアニメと小説と漫画の話題が多めの日記です。普段はTwitterがメインの活動場所。</p>
+</div><!-- section -->
+</div><!-- body -->
+</div><!-- day -->
+<!-- ヘッダここまで -->
