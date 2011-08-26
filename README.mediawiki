@@ -1,5 +1,5 @@
-== What's ? ==
-��b�̃T�C�g�ɂ���CMS�c�[�����g�����y�[�W�́A�f�U�C���n�ꗗ�B
+﻿== What's ? ==
+大臣のサイトにあるCMSツールを使ったページの、デザイン系一覧。
 
 * tDiary : https://github.com/tdiary
 __NOTOC__
