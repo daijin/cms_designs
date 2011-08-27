@@ -743,6 +743,11 @@ img.right {
     margin: 0.5em;
 }
 
+/* booklog */
+div.booklog_html {
+    margin-left: 1em;
+}
+
 /*
  for insert dropdown calendar into adminmenu
  */
