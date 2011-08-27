@@ -1,13 +1,14 @@
-@charset "euc-jp";
+﻿@charset "utf-8";
 /*
-Title: tDiary3 default
-Revision: $Revision: 1.0 $
-Author: TADA Tadashi
-Access: t@tdtds.jp
-License: GPL
-Comment: default theme for tDiary 3.1 or later.
+Title    : ZephyrCradle Style for tDiary3
+Revision : v2011.08.27
+Author   : 大臣 (daijin)
+Web      : www.zephyr-cradle.info
+License  : GPL
+Note     : This style is based on "tDiary3 default" by TADA Tadashi.
 
-Copyright 2011 (C) TADA Tadashi <t@tdtds.jp>
+2011 (C) 大臣 / Zephyr Cradle
+2011 (C) TADA Tadashi <t@tdtds.jp>
 */
 
 * {
